@@ -1,7 +1,7 @@
 import TodoHeader from "./components/TodoHeader/TodoHeader";
 import TodoTask from "./components/TodoTask/TodoTask";
 import { useEffect, useState } from "react";
-import "./app.css";
+import "./App.css";
 
 /* Initialisation of the localstorage key */
 const LOCAL_STORAGE_KEY = "todo:tasks";
