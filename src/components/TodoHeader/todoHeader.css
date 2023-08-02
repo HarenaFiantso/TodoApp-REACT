@@ -1,6 +1,9 @@
 .header {
-  background: linear-gradient(#001a2c, #012e4b);
+  background-image: linear-gradient(rgba(0, 15, 46, 0.1), rgba(0, 0, 0, 1)),
+    url(bg.jpg);
   display: flex;
+  background-size: cover;
+  background-position: center;
   align-items: center;
   justify-content: center;
   height: 200px;
@@ -14,11 +17,42 @@
 
 .newTaskForm {
   position: absolute;
-  height: 50px;
-  bottom: -30px;
+  height: 54px;
+  bottom: -27px;
   width: 100%;
-  max-width: 750px;
+  max-width: 736px;
   display: flex;
   gap: 8px;
   padding: 0 1rem;
+}
+
+.newTaskForm input {
+  height: 100%;
+  flex: 1;
+  color: black;
+  font-weight: 500;
+  background-color: #ddd;
+  border: 1px solid #0d0d0d;
+  border-radius: 10px;
+  padding: 5px 16px;
+  font-size: 16px;
+}
+
+.newTaskForm input::placeholder {
+  color: #0d0d0d;
+}
+
+.newTaskForm button {
+  height: 100%;
+  padding: 5px 16px;
+  background-color: #086ba5;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  box-shadow: 0 8px 24px #0000004d;
 }
