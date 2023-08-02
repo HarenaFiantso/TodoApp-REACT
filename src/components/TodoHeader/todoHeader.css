@@ -1,19 +1,24 @@
 .header {
-    background: linear-gradient(#001A2C, #012E4B);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    position: relative;
+  background: linear-gradient(#001a2c, #012e4b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  position: relative;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .newTaskForm {
-    position: absolute;
-    height: 50px;
-    bottom: -30px;
-    width: 100%;
-    max-width: 750px;
-    display: flex;
-    gap: 8px;
-    padding: 0 1rem;
+  position: absolute;
+  height: 50px;
+  bottom: -30px;
+  width: 100%;
+  max-width: 750px;
+  display: flex;
+  gap: 8px;
+  padding: 0 1rem;
 }
