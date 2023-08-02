@@ -1,4 +1,5 @@
 import TodoHeader from "./components/TodoHeader/TodoHeader";
+import TodoTask from "./components/TodoTask/TodoTask";
 import { useEffect, useState } from "react";
 import "./app.css";
 
@@ -35,9 +36,34 @@ const App = () => {
     ]);
   }
 
+  /* 2nd: Deleting task by id */
+  function deleteTaskById(taskId) {
+    const newTasks = tasks.filter((task) => task.id !== taskId);
+    setTasksAndSave(newTasks);
+  }
+
+  /* 3rd: Toggling finished task */
+  function toggleTaskCompletedById(taskId) {
+    const newTasks = tasks.map((task) => {
+      if (task.id === taskId) {
+        return {
+          ...task,
+          isCompleted: !task.isCompleted,
+        };
+      }
+      return task;
+    });
+    setTasksAndSave(newTasks);
+  }
+
   return (
     <div>
       <TodoHeader handleAddTask={addTask} />
+      <TodoTask
+        tasks={tasks}
+        onDelete={deleteTaskById}
+        onComplete={toggleTaskCompletedById}
+      />
     </div>
   );
 };

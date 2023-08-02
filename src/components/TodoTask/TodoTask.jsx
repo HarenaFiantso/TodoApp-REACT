@@ -7,7 +7,7 @@ const TodoTask = ({ tasks, onDelete, onComplete }) => {
 
   return (
     <section className="tasks">
-      <header className="header">
+      <header className="container">
         <div>
           <p>Created tasks</p>
           <span>{taskCount}</span>
