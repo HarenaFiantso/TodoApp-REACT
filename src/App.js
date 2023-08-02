@@ -1,9 +1,11 @@
-import TodoApp from "./components/TodoApp";
+import TodoHeader from "./components/TodoHeader/TodoHeader";
 
-function App() {
-    return(
-      <TodoApp />
-    );
-  }
+const App = () => {
+  return(
+    <div>
+      <TodoHeader />
+    </div>
+  );
+}
 
 export default App;
